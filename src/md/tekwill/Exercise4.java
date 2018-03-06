@@ -8,6 +8,14 @@ public class Exercise4 {
     OUT: Min: 4; Max: 512.
     */
     public static void main(String[] args) {
-        // write your code here
+        int[] numbers = {256, 16, 32, 8, 4, 512};
+        int min = numbers[0];
+        int max = numbers[0];
+        for (int i = 0; i < numbers.length; i++) {
+            if (min > numbers[i]) min = numbers[i];{
+                if (max < numbers[i]) max = numbers[i];
+            }
+        }
+        System.out.println("OUT: Min: "+min+"; "+"Max: "+max+"." );
     }
 }

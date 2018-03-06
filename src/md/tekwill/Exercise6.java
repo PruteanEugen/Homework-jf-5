@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise6 {
 
     /*
@@ -8,6 +10,12 @@ public class Exercise6 {
     OUT: Developer
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] inputArray = {"Java", "Developer", "Software"};
+        String maxElement = "";
+
+        for (String inputElement : inputArray)
+            maxElement = inputElement.length() > maxElement.length() ? inputElement : maxElement;
+
+        System.out.println(maxElement);
     }
 }

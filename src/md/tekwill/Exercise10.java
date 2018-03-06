@@ -9,6 +9,11 @@ public class Exercise10 {
     OUT: One, Three
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] myString1 = {"One","Two","Three","Four","Five","Six","Seven"};
+        for (int i = 0; i < 7; i++) {
+            if (myString1[i].contains("e")){
+                System.out.println(myString1[i]);
+            }
+        }
     }
 }
